@@ -1,0 +1,57 @@
+/* Remove default Vite styling */
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Overlay UI */
+.overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  color: white;
+  pointer-events: none; /* Let clicks pass through to canvas */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+.overlay h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -1px;
+}
+
+.overlay p {
+  font-size: 1rem;
+  margin: 0;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+/* Leva Panel Positioning */
+.leva-c > div {
+    /* Force Leva to top-right on desktop by default? 
+       Leva usually handles this, but let's ensure it's predictable. */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .overlay {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .overlay h1 {
+    font-size: 1.5rem;
+  }
+  
+  .overlay p {
+    font-size: 0.9rem;
+  }
+
+  /* Force Leva to collapse or move on small screens if needed */
+}
