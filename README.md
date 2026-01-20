@@ -137,10 +137,20 @@ If you have multiple cameras, change `camera_index=0` in `vision.py` to `1` or `
 ---
 
 ## 🔮 Roadmap
-- [x] **Phase 1**: Structure & Basic Teleop (Completed)
-- [x] **Phase 2**: One Camera Streaming (Completed) -> *Camera Conflict Solved!*
-- [ ] **Phase 3**: Hardware Integration (Arduino/ESP Serial)
-- [ ] **Phase 4**: Autonomous Face Tracking
+
+### Phase 1: Foundation & Hardware (In Progress)
+- [x] **1. 2WD Differential Drive** (Joystick Logic & Control)
+- [x] **2. 2-Axis Pan-Tilt Gimbal** (Look-then-Drive Logic)
+- [x] **3. Live Cam Streaming** (MJPEG Integration)
+- [ ] **4. Cliff Sensing** (4x IR Sensors)
+- [ ] **5. Rear Obstacle Sensing** (Ultrasonic)
+
+### Phase 2: Advanced AI
+- [x] **1. Vision-to-Control** (Hand Gestures -> Proxy)
+- [ ] **2. Voice Interaction** (WW / ASR / TTS)
+- [ ] **3. Logic & Memory** (Small Language Models + RAG)
+- [ ] **4. Personality** (Animated Face Emotions)
+- [ ] **5. Professional Control** (ROS Integration)
 
 ---
 
